@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+  <meta name="format-detection" content="telphone=no, email=no" />
+  <meta name="renderer" content="webkit">
+  <title>极速浏览器-极速浏览器下载-Chromium浏览器-最新版官方下载</title>
+  <meta name="keywords" content="极速浏览器,Chromium浏览器" />
+  <meta name="description" content="极速浏览器最新版官方下载,极速浏览器是最新Chromium内核和IE内核的浏览器,安全稳定,双内核随意切换,无广告,秒开网页。" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="static/css/style.css" />
+  <script type="text/javascript" src="static/js/jquery.js"></script>
+  <script type="text/javascript" src="static/js/base.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="download.js"></script>
+</head>
+
+<body>
+  <div>
+    <header>
+      <div class="head">
+        <div class="logo">
+          <img src="static/picture/logo.svg" title="Chrome极速浏览器" alt="Chrome极速浏览器" />
+        </div>
+        <span class="head-text">Chrome极速浏览器</span>
+      </div>
+    </header>
+
+    <div class="banner">
+      <div class="banner-title">Chrome极速浏览器，让一切变得更简单</div>
+      <div class="banner-desk">安全 | 高效 | 极速 | 完美兼容</div>
+      <button  class="banner-btn download-btn" id="downloadButton">
+        <i class="round-animation"></i>
+        <img src="static/picture/icon_down.svg" title="立即下载" alt="立即下载">立即下载
+      </button>
+      <!-- <div class="banner-text" style="opacity: 0;">最新版本：6.1.5.4</div> -->
+      <div class="banner-text">适用于：windows 11 /10/8.1/8/7等系统</div>
+    </div>
+    <div class="swiper-box">
+      <ul class="swiper-certif-list">
+        <li class="p4 YcenterPosition"><img src="static/picture/swiper_img_3.png" alt="" >
+        </li>
+        <li class="p5 YcenterPosition"><img src="static/picture/swiper_img_1.png" alt="" >
+        </li>
+        <li class="p3 YcenterPosition"><img src="static/picture/swiper_img_2.png" alt="" >
+        </li>
+      </ul>
+      <div class="swiper-tab">
+        <span class="wp-tab-label"></span>
+        <span class="wp-tab-label"></span>
+        <span class="wp-tab-label"></span>
+      </div>
+    </div>
+
+    <div class="group group-1">
+      <div class="group-left">
+        <div class="group-desk">
+          快速预览与切换，操作更高效
+        </div>
+        <ul class="group-tips">
+          <li>鼠标悬停顶部标签页时，可以便捷预览对应网页内容</li>
+          <li>通过鼠标滚轮，可以在多个标签页中轻松切换</li>
+        </ul>
+        <button  class="download-btn" id="downloadButton">
+          <div class="experience-btn">
+            立即体验
+          </div>
+        </button>
+      </div>
+      <img src="static/picture/image1.png" alt="快速预览与切换，操作更高效" >
+    </div>
+
+    <div class="group group-2">
+      <img src="static/picture/image2.png" alt="多种模式支持，完美兼容" >
+      <div class="group-right">
+        <div class="group-desk">
+          多种模式支持，完美兼容
+        </div>
+        <ul class="group-tips">
+          <li>夜间模式支持调整亮度及色彩，护眼更舒适</li>
+          <li>隐身模式无痕消除搜索记录，全面保护隐私</li>
+        </ul>
+<button  class="download-btn" id="downloadButton">
+          <div class="experience-btn">
+            立即体验
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <div class="group group-3">
+      <div class="group-left">
+        <div class="group-desk">
+          专业工具帮助，操作尽在掌握
+        </div>
+        <ul class="group-tips">
+          <li>历史记录管理、快速鼠标手势、书签密码同步</li>
+          <li>多种实用工具加持，让网页浏览变得更高效</li>
+        </ul>
+       <button  class="download-btn" id="downloadButton">
+          <div class="experience-btn">
+            立即体验
+          </div>
+        </button>
+      </div>
+      <img src="static/picture/image3.png" alt="专业工具帮助，操作尽在掌握" >
+    </div>
+
+    <div class="entrance"></div>
+    <div class="footer">
+      <div class="footer-content">
+        <p>快速获取Chrome极速浏览器</p>
+        <button  class="download-btn" id="downloadButton">
+          <div class="footer-btn">
+            <i class="round-animation"></i>
+            立即下载Chrome<img src="static/picture/icon_go.svg" title="立即下载Chrome" alt="立即下载Chrome">
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+<script type="text/javascript">
+  function setFontSize() {
+    const designWidth = 1920; // 设计稿宽度
+    const minWidth = 1327; // 最小支持宽度
+    const clientWidth = window.screen.width; // 屏幕宽度
+    // const clientWidth = document.documentElement.clientWidth || document.body.clientWidth; // 窗口宽度
+    const screenWidth = Math.max(clientWidth, minWidth);
+    const scale = screenWidth / designWidth;
+    document.documentElement.style.fontSize = `${16 * scale}px`;
+  }
+  // 初始化设置字体大小
+  setFontSize();
+  // 监听窗口大小变化，重新设置字体大小
+  window.addEventListener('resize', setFontSize);
+
+  // 统计上报代码
+
+  //
+  $(window).scroll(function () {
+    var stop = $(window).scrollTop();
+    if (stop > 500) {
+      $(".footer").show();
+    } else {
+      $(".footer").hide();
+    }
+  });
+</script>
+
+<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"Kp3qXvYJHWrfjSxt",ck:"Kp3qXvYJHWrfjSxt"})</script>
+</html>
